@@ -19,7 +19,7 @@ import select
 
 def main():
     # connect to mongodb, use ixm
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient("mongodb://172.18.2.21")
     db = client['ixm']
 
     # spawn processes and feed data
